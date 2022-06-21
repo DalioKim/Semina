@@ -119,7 +119,6 @@
 		E3FA50792861815A00798224 /* Helper */ = {
 			isa = PBXGroup;
 			children = (
-				E3FA507E2861842800798224 /* Common */,
 				E3FA507C286183FA00798224 /* Utils */,
 			);
 			path = Helper;
@@ -136,6 +135,7 @@
 		E3FA507B2861819B00798224 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				E3FA508B2861970200798224 /* Views */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -145,14 +145,6 @@
 			children = (
 			);
 			path = Utils;
-			sourceTree = "<group>";
-		};
-		E3FA507E2861842800798224 /* Common */ = {
-			isa = PBXGroup;
-			children = (
-				E3FA508B2861970200798224 /* Views */,
-			);
-			path = Common;
 			sourceTree = "<group>";
 		};
 		E3FA508B2861970200798224 /* Views */ = {
