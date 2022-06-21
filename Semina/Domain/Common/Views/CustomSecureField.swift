@@ -30,3 +30,16 @@ struct CustomSecureField: View {
         }
     }
 }
+
+extension CustomSecureField: SubView {
+    func didSet(_ viewConfigure: ViewConfigure) -> some View {
+        switch viewConfigure {
+        case .main:
+            return self.padding()
+                .background(Color(.init(white: 4, alpha: 0.15)))
+                .cornerRadius(10)
+                .foregroundColor(.white)
+                .padding(.horizontal,32)
+        }
+    }
+}

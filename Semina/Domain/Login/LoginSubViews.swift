@@ -8,7 +8,6 @@
 import SwiftUI
 
 extension LoginView {
-    
     var image: some View {
         Image("nrc")
             .resizable()
@@ -19,34 +18,25 @@ extension LoginView {
     
     var top: some View {
         VStack(spacing:20){
-            CustomTextField(text: $email, placeholder: Text("Email"), imageName: "envelope")
-                .padding()
-                .background(Color(.init(white: 4, alpha: 0.15)))
-                .cornerRadius(10)
-                .foregroundColor(.white)
-                .padding(.top,40)
-                .padding(.horizontal,32)
+            CustomTextField(text: .constant(""), placeholder: Text("Email"), imageName: "envelope")
+                .didSet(.main)
             
             CustomSecureField(text: $password, placeholder: Text("Password"))
-                .padding()
-                .background(Color(.init(white: 4, alpha: 0.15)))
-                .cornerRadius(10)
-                .foregroundColor(.white)
-                .padding(.horizontal,32)
+                .didSet(.main)
         }
     }
     
     var bottom: some View {
-            NavigationLink {
-                LoginView()
-            } label: {
-                Text("로그인")
-                    .font(.headline)
-                    .foregroundColor(.white)
-                    .frame(width: 300, height: 50)
-                    .background(Color(.init(white: 4, alpha: 0.15)))
-                    .padding(.bottom, 20)
-                    .padding(.horizontal,32)
-            }
+        NavigationLink {
+            LoginView()
+        } label: {
+            Text("로그인")
+                .font(.headline)
+                .foregroundColor(.white)
+                .frame(width: 300, height: 50)
+                .background(Color(.init(white: 4, alpha: 0.15)))
+                .padding(.bottom, 20)
+                .padding(.horizontal,32)
+        }
     }
 }

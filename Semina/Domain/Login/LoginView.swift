@@ -12,20 +12,21 @@ struct LoginView: View {
     @State var password = ""
     
     var loginHolder: some View {
-        ZStack {
-            Color.black.ignoresSafeArea()
-            VStack(spacing: 20) {
-                image
-                top
-                bottom
-            }
-            .padding(.top, 10)
+        VStack(spacing: 20) {
+            image
+            top
+            bottom
         }
+        .padding(.top, 10)
     }
     
     var body: some View {
         NavigationView {
-            loginHolder
+            ZStack {
+                Color.black.ignoresSafeArea()
+                
+                loginHolder
+            }
         }
     }
 }

@@ -14,6 +14,7 @@
 		E3FA50802861843600798224 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3FA507F2861843600798224 /* CustomTextField.swift */; };
 		E3FA50822861846200798224 /* CustomSecureField.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3FA50812861846200798224 /* CustomSecureField.swift */; };
 		E3FA508A2861950A00798224 /* LoginSubViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3FA50892861950A00798224 /* LoginSubViews.swift */; };
+		E3FA508F2861B68C00798224 /* SubView+didSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3FA508E2861B68C00798224 /* SubView+didSet.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		E3FA507F2861843600798224 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		E3FA50812861846200798224 /* CustomSecureField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSecureField.swift; sourceTree = "<group>"; };
 		E3FA50892861950A00798224 /* LoginSubViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginSubViews.swift; sourceTree = "<group>"; };
+		E3FA508E2861B68C00798224 /* SubView+didSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SubView+didSet.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,6 +138,7 @@
 			isa = PBXGroup;
 			children = (
 				E3FA508B2861970200798224 /* Views */,
+				E3FA508E2861B68C00798224 /* SubView+didSet.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -228,6 +231,7 @@
 			files = (
 				E3FA50822861846200798224 /* CustomSecureField.swift in Sources */,
 				E3FA506928617E2A00798224 /* LoginView.swift in Sources */,
+				E3FA508F2861B68C00798224 /* SubView+didSet.swift in Sources */,
 				E3FA508A2861950A00798224 /* LoginSubViews.swift in Sources */,
 				E3FA506728617E2A00798224 /* SeminaApp.swift in Sources */,
 				E3FA50802861843600798224 /* CustomTextField.swift in Sources */,

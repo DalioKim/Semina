@@ -32,8 +32,16 @@ struct CustomTextField: View {
     }
 }
 
-struct CustomTextField_Previews: PreviewProvider {
-    static var previews: some View {
-        CustomTextField(text: .constant(""), placeholder: Text("Email"), imageName: "envelope")
+extension CustomTextField: SubView {
+    func didSet(_ viewConfigure: ViewConfigure) -> some View {
+        switch viewConfigure {
+        case .main:
+            return self.padding()
+                .background(Color(.init(white: 4, alpha: 0.15)))
+                .cornerRadius(10)
+                .foregroundColor(.white)
+                .padding(.top,40)
+                .padding(.horizontal,32)
+        }
     }
 }
