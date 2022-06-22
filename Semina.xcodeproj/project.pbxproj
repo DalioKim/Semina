@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E304AFA62863098700410945 /* EmptyModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = E304AFA52863098700410945 /* EmptyModifier.swift */; };
 		E34A80732862E17200A8DB93 /* ImageModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = E34A80722862E17200A8DB93 /* ImageModifier.swift */; };
 		E3FA506728617E2A00798224 /* SeminaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3FA506628617E2A00798224 /* SeminaApp.swift */; };
 		E3FA506928617E2A00798224 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3FA506828617E2A00798224 /* LoginView.swift */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E304AFA52863098700410945 /* EmptyModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyModifier.swift; sourceTree = "<group>"; };
 		E34A80722862E17200A8DB93 /* ImageModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageModifier.swift; sourceTree = "<group>"; };
 		E3FA506328617E2A00798224 /* Semina.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Semina.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E3FA506628617E2A00798224 /* SeminaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeminaApp.swift; sourceTree = "<group>"; };
@@ -169,6 +171,7 @@
 				E3FA50932861E21100798224 /* TextModifier.swift */,
 				E34A80722862E17200A8DB93 /* ImageModifier.swift */,
 				E3FA50952861E50D00798224 /* FieldStyle.swift */,
+				E304AFA52863098700410945 /* EmptyModifier.swift */,
 			);
 			path = Modifiers;
 			sourceTree = "<group>";
@@ -247,6 +250,7 @@
 				E3FA50942861E21100798224 /* TextModifier.swift in Sources */,
 				E3FA506928617E2A00798224 /* LoginView.swift in Sources */,
 				E3FA508A2861950A00798224 /* LoginSubViews.swift in Sources */,
+				E304AFA62863098700410945 /* EmptyModifier.swift in Sources */,
 				E3FA506728617E2A00798224 /* SeminaApp.swift in Sources */,
 				E3FA50802861843600798224 /* CustomTextField.swift in Sources */,
 				E3FA50962861E50D00798224 /* FieldStyle.swift in Sources */,

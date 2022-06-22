@@ -8,27 +8,27 @@
 import SwiftUI
 
 enum FieldStyle {
-    case textField
-    case secureField
+    case text
+    case secure
 }
 
 extension View {
     @ViewBuilder func style(_ style: FieldStyle) -> some View {
         switch style {
-        case .textField:
+        case .text:
             self.padding()
                 .background(Color(.init(white: 4, alpha: 0.15)))
                 .cornerRadius(10)
                 .foregroundColor(.white)
-                .padding(.top,40)
-                .padding(.horizontal,32)
+                .padding(.top, 40)
+                .padding(.horizontal, 32)
             
-        case .secureField:
+        case .secure:
             self.padding()
                 .background(Color(.init(white: 4, alpha: 0.15)))
                 .cornerRadius(10)
                 .foregroundColor(.white)
-                .padding(.horizontal,32)
+                .padding(.horizontal, 32)
         }
     }
 }

@@ -15,12 +15,12 @@ struct CustomSecureField: View {
         ZStack(alignment: .leading) {
             if text.isEmpty {
                 placeholder
-                    .modifier(PlacehodlerModifier())
+                    .modifier(Placehodler())
             }
             
             HStack{
                 Image(systemName: "lock")
-                    .modifier(FieldImage())
+                    .modifier(Field())
                 SecureField("",text: $text)
             }
         }

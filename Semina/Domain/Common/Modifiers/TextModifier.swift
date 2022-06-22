@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct LabelModifier: ViewModifier {
+struct Label: ViewModifier {
     func body(content: Content) -> some View {
         content
             .font(.headline)
@@ -19,7 +19,7 @@ struct LabelModifier: ViewModifier {
     }
 }
 
-struct PlacehodlerModifier: ViewModifier {
+struct Placehodler: ViewModifier {
     func body(content: Content) -> some View {
         content
             .foregroundColor(Color(.init(white: 1, alpha: 0.8)))

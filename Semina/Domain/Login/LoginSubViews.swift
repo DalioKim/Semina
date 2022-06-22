@@ -10,16 +10,16 @@ import SwiftUI
 extension LoginView {
     var image: some View {
         Image("nrc")
-            .modifier(MainImage())
+            .modifier(Main())
     }
     
     var top: some View {
         VStack(spacing:20){
             CustomTextField(text: .constant(""), placeholder: Text("Email"), imageName: "envelope")
-                .style(.textField)
+                .style(.text)
 
             CustomSecureField(text: $password, placeholder: Text("Password"))
-                .style(.secureField)
+                .style(.secure)
         }
     }
     
@@ -28,7 +28,7 @@ extension LoginView {
             LoginView()
         } label: {
             Text("로그인")
-                .modifier(LabelModifier())
+                .modifier(Label())
         }
     }
 }

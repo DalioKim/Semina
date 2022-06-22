@@ -14,10 +14,10 @@ struct CustomTextField: View {
     
     var body: some View {
         ZStack(alignment: .leading) {
-            if text.isEmpty {
-                placeholder
-                    .modifier(PlacehodlerModifier())
-            }
+            placeholder
+                .isEmpty(!text.isEmpty)
+                .modifier(Placehodler())
+            
             imageHolder
         }
     }
@@ -27,7 +27,7 @@ extension CustomTextField {
     var imageHolder: some View {
         HStack{
             Image(systemName: imageName)
-                .modifier(FieldImage())
+                .modifier(Field())
             TextField("",text: $text)
         }
     }

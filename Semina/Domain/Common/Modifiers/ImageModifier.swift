@@ -18,7 +18,7 @@ extension Image {
     }
 }
 
-struct FieldImage: ImageModifier {
+struct Field: ImageModifier {
     func body(image: Image) -> some View {
         image
             .resizable()
@@ -28,7 +28,7 @@ struct FieldImage: ImageModifier {
     }
 }
 
-struct MainImage: ImageModifier {
+struct Main: ImageModifier {
     func body(image: Image) -> some View {
         image
             .resizable()
