@@ -15,31 +15,15 @@ struct CustomSecureField: View {
         ZStack(alignment: .leading) {
             if text.isEmpty {
                 placeholder
-                    .foregroundColor(Color(.init(white: 1, alpha: 0.8)))
-                    .padding(.leading,40)
+                    .modifier(PlacehodlerModifier())
             }
             
             HStack{
                 Image(systemName: "lock")
-                    .resizable()
-                    .scaledToFit()
-                    .frame(width: 20, height: 20)
-                    .foregroundColor(.white)
+                    .modifier(FieldImage())
                 SecureField("",text: $text)
             }
         }
     }
 }
 
-extension CustomSecureField: SubView {
-    func didSet(_ viewConfigure: ViewConfigure) -> some View {
-        switch viewConfigure {
-        case .main:
-            return self.padding()
-                .background(Color(.init(white: 4, alpha: 0.15)))
-                .cornerRadius(10)
-                .foregroundColor(.white)
-                .padding(.horizontal,32)
-        }
-    }
-}
