@@ -13,17 +13,21 @@ struct CustomSecureField: View {
     
     var body: some View {
         ZStack(alignment: .leading) {
-            if text.isEmpty {
-                placeholder
-                    .modifier(Placehodler())
-            }
-            
-            HStack{
-                Image(systemName: "lock")
-                    .modifier(Field())
-                SecureField("",text: $text)
-            }
+            placeholder
+                .isEmpty(!text.isEmpty)
+                .asPlacehodlerStyle()
+
+            imageHolder
         }
     }
 }
 
+extension CustomSecureField {
+    var imageHolder: some View {
+        HStack{
+            Image(systemName: "lock")
+                .asIconStyle()
+            SecureField("",text: $text)
+        }
+    }
+}

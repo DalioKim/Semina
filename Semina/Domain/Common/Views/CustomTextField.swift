@@ -16,7 +16,7 @@ struct CustomTextField: View {
         ZStack(alignment: .leading) {
             placeholder
                 .isEmpty(!text.isEmpty)
-                .modifier(Placehodler())
+                .asPlacehodlerStyle()
             
             imageHolder
         }
@@ -27,7 +27,8 @@ extension CustomTextField {
     var imageHolder: some View {
         HStack{
             Image(systemName: imageName)
-                .modifier(Field())
+                .asIconStyle()
+            
             TextField("",text: $text)
         }
     }

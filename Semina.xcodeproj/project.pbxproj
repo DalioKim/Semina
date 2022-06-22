@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		E304AFA62863098700410945 /* EmptyModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = E304AFA52863098700410945 /* EmptyModifier.swift */; };
-		E34A80732862E17200A8DB93 /* ImageModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = E34A80722862E17200A8DB93 /* ImageModifier.swift */; };
+		E34A80732862E17200A8DB93 /* ImageStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = E34A80722862E17200A8DB93 /* ImageStyle.swift */; };
 		E3FA506728617E2A00798224 /* SeminaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3FA506628617E2A00798224 /* SeminaApp.swift */; };
 		E3FA506928617E2A00798224 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3FA506828617E2A00798224 /* LoginView.swift */; };
 		E3FA506B28617E2C00798224 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E3FA506A28617E2C00798224 /* Assets.xcassets */; };
@@ -16,13 +16,13 @@
 		E3FA50802861843600798224 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3FA507F2861843600798224 /* CustomTextField.swift */; };
 		E3FA50822861846200798224 /* CustomSecureField.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3FA50812861846200798224 /* CustomSecureField.swift */; };
 		E3FA508A2861950A00798224 /* LoginSubViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3FA50892861950A00798224 /* LoginSubViews.swift */; };
-		E3FA50942861E21100798224 /* TextModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3FA50932861E21100798224 /* TextModifier.swift */; };
+		E3FA50942861E21100798224 /* TextStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3FA50932861E21100798224 /* TextStyle.swift */; };
 		E3FA50962861E50D00798224 /* FieldStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3FA50952861E50D00798224 /* FieldStyle.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		E304AFA52863098700410945 /* EmptyModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyModifier.swift; sourceTree = "<group>"; };
-		E34A80722862E17200A8DB93 /* ImageModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageModifier.swift; sourceTree = "<group>"; };
+		E34A80722862E17200A8DB93 /* ImageStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageStyle.swift; sourceTree = "<group>"; };
 		E3FA506328617E2A00798224 /* Semina.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Semina.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E3FA506628617E2A00798224 /* SeminaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeminaApp.swift; sourceTree = "<group>"; };
 		E3FA506828617E2A00798224 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
@@ -31,7 +31,7 @@
 		E3FA507F2861843600798224 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		E3FA50812861846200798224 /* CustomSecureField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSecureField.swift; sourceTree = "<group>"; };
 		E3FA50892861950A00798224 /* LoginSubViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginSubViews.swift; sourceTree = "<group>"; };
-		E3FA50932861E21100798224 /* TextModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextModifier.swift; sourceTree = "<group>"; };
+		E3FA50932861E21100798224 /* TextStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextStyle.swift; sourceTree = "<group>"; };
 		E3FA50952861E50D00798224 /* FieldStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FieldStyle.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -46,6 +46,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E304AFA728631F6600410945 /* Style */ = {
+			isa = PBXGroup;
+			children = (
+				E34A80722862E17200A8DB93 /* ImageStyle.swift */,
+				E3FA50952861E50D00798224 /* FieldStyle.swift */,
+				E3FA50932861E21100798224 /* TextStyle.swift */,
+			);
+			path = Style;
+			sourceTree = "<group>";
+		};
 		E3FA505A28617E2A00798224 = {
 			isa = PBXGroup;
 			children = (
@@ -111,8 +121,8 @@
 			isa = PBXGroup;
 			children = (
 				E3FA507B2861819B00798224 /* Common */,
-				E3FA50752861812200798224 /* Main */,
 				E3FA50742861811700798224 /* Login */,
+				E3FA50752861812200798224 /* Main */,
 			);
 			path = Domain;
 			sourceTree = "<group>";
@@ -143,7 +153,6 @@
 		E3FA507B2861819B00798224 /* Common */ = {
 			isa = PBXGroup;
 			children = (
-				E3FA50922861E20200798224 /* Modifiers */,
 				E3FA508B2861970200798224 /* Views */,
 			);
 			path = Common;
@@ -152,6 +161,7 @@
 		E3FA507C286183FA00798224 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				E3FA50922861E20200798224 /* Modifiers */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -168,10 +178,8 @@
 		E3FA50922861E20200798224 /* Modifiers */ = {
 			isa = PBXGroup;
 			children = (
-				E3FA50932861E21100798224 /* TextModifier.swift */,
-				E34A80722862E17200A8DB93 /* ImageModifier.swift */,
-				E3FA50952861E50D00798224 /* FieldStyle.swift */,
 				E304AFA52863098700410945 /* EmptyModifier.swift */,
+				E304AFA728631F6600410945 /* Style */,
 			);
 			path = Modifiers;
 			sourceTree = "<group>";
@@ -247,14 +255,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				E3FA50822861846200798224 /* CustomSecureField.swift in Sources */,
-				E3FA50942861E21100798224 /* TextModifier.swift in Sources */,
+				E3FA50942861E21100798224 /* TextStyle.swift in Sources */,
 				E3FA506928617E2A00798224 /* LoginView.swift in Sources */,
 				E3FA508A2861950A00798224 /* LoginSubViews.swift in Sources */,
 				E304AFA62863098700410945 /* EmptyModifier.swift in Sources */,
 				E3FA506728617E2A00798224 /* SeminaApp.swift in Sources */,
 				E3FA50802861843600798224 /* CustomTextField.swift in Sources */,
 				E3FA50962861E50D00798224 /* FieldStyle.swift in Sources */,
-				E34A80732862E17200A8DB93 /* ImageModifier.swift in Sources */,
+				E34A80732862E17200A8DB93 /* ImageStyle.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
