@@ -8,9 +8,58 @@
 import SwiftUI
 
 struct LoginView: View {
+    var mainImage: some View {
+        Image("nrc")
+            .asMainImageStyle()
+    }
+    
+    var loginHolder: some View {
+        VStack(spacing: 20) {
+            mainImage
+            FiledView()
+        }
+        .padding(.top, 10)
+    }
+    
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        NavigationView {
+            ZStack {
+                Color.black.ignoresSafeArea()
+                loginHolder
+            }
+        }
+    }
+}
+
+
+struct FiledView: View {
+    @State private var email = ""
+    @State private var password = ""
+    
+    var filed: some View {
+        VStack(spacing:20){
+            CustomTextField(text: .constant(""), placeholder: Text("Email"), imageName: "envelope")
+                .asTextFieldStyle()
+            
+            CustomSecureField(text: $password, placeholder: Text("Password"))
+                .asSecureFieldStyle()
+        }
+    }
+    
+    var button: some View {
+        NavigationLink {
+            LoginView()
+        } label: {
+            Text("로그인")
+                .asLabelStyle()
+        }
+    }
+    
+    var body: some View {
+        VStack {
+            filed
+            button
+        }
     }
 }
 
