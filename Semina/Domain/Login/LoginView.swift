@@ -9,7 +9,7 @@ import SwiftUI
 
 struct LoginView: View {
     var mainImage: some View {
-        Image(Asset.nrc.name)
+        Image(Asset.Image.nrc.name)
             .asMainImageStyle()
     }
     

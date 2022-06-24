@@ -10,7 +10,9 @@
 		AEA1E1797FEBDB0CA0FCD40C /* Pods_Semina.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3FBA9A2356BD8F378B9CA78 /* Pods_Semina.framework */; };
 		E304AFA62863098700410945 /* EmptyModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = E304AFA52863098700410945 /* EmptyModifier.swift */; };
 		E34A80732862E17200A8DB93 /* ImageStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = E34A80722862E17200A8DB93 /* ImageStyle.swift */; };
-		E3F5A66028659D1B00BC5182 /* XCAssets+Generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3F5A65F28659D1B00BC5182 /* XCAssets+Generated.swift */; };
+		E3CE60F32865A27D0076FFE3 /* Image.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E3CE60F22865A27D0076FFE3 /* Image.xcassets */; };
+		E3CE60F62865A3CB0076FFE3 /* Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3CE60F52865A3CB0076FFE3 /* Assets.swift */; };
+		E3F5A66228659EC000BC5182 /* Color.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E3F5A66128659EC000BC5182 /* Color.xcassets */; };
 		E3FA506728617E2A00798224 /* SeminaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3FA506628617E2A00798224 /* SeminaApp.swift */; };
 		E3FA506928617E2A00798224 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3FA506828617E2A00798224 /* LoginView.swift */; };
 		E3FA506B28617E2C00798224 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E3FA506A28617E2C00798224 /* Assets.xcassets */; };
@@ -27,7 +29,9 @@
 		C3FBA9A2356BD8F378B9CA78 /* Pods_Semina.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Semina.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E304AFA52863098700410945 /* EmptyModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyModifier.swift; sourceTree = "<group>"; };
 		E34A80722862E17200A8DB93 /* ImageStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageStyle.swift; sourceTree = "<group>"; };
-		E3F5A65F28659D1B00BC5182 /* XCAssets+Generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "XCAssets+Generated.swift"; sourceTree = "<group>"; };
+		E3CE60F22865A27D0076FFE3 /* Image.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Image.xcassets; sourceTree = "<group>"; };
+		E3CE60F52865A3CB0076FFE3 /* Assets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Assets.swift; sourceTree = "<group>"; };
+		E3F5A66128659EC000BC5182 /* Color.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Color.xcassets; sourceTree = "<group>"; };
 		E3FA506328617E2A00798224 /* Semina.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Semina.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E3FA506628617E2A00798224 /* SeminaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeminaApp.swift; sourceTree = "<group>"; };
 		E3FA506828617E2A00798224 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
@@ -81,7 +85,7 @@
 		E3F5A65E28659CE700BC5182 /* Generated */ = {
 			isa = PBXGroup;
 			children = (
-				E3F5A65F28659D1B00BC5182 /* XCAssets+Generated.swift */,
+				E3CE60F52865A3CB0076FFE3 /* Assets.swift */,
 			);
 			path = Generated;
 			sourceTree = "<group>";
@@ -154,6 +158,8 @@
 			isa = PBXGroup;
 			children = (
 				E3FA506A28617E2C00798224 /* Assets.xcassets */,
+				E3F5A66128659EC000BC5182 /* Color.xcassets */,
+				E3CE60F22865A27D0076FFE3 /* Image.xcassets */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -252,7 +258,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				E3FA506E28617E2C00798224 /* Preview Assets.xcassets in Resources */,
+				E3CE60F32865A27D0076FFE3 /* Image.xcassets in Resources */,
 				E3FA506B28617E2C00798224 /* Assets.xcassets in Resources */,
+				E3F5A66228659EC000BC5182 /* Color.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,7 +296,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E3F5A66028659D1B00BC5182 /* XCAssets+Generated.swift in Sources */,
 				E3FA50822861846200798224 /* CustomSecureField.swift in Sources */,
 				E3FA50942861E21100798224 /* TextStyle.swift in Sources */,
 				E3FA506928617E2A00798224 /* LoginView.swift in Sources */,
@@ -297,6 +304,7 @@
 				E3FA50802861843600798224 /* CustomTextField.swift in Sources */,
 				E3FA50962861E50D00798224 /* FieldStyle.swift in Sources */,
 				E34A80732862E17200A8DB93 /* ImageStyle.swift in Sources */,
+				E3CE60F62865A3CB0076FFE3 /* Assets.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

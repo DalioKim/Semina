@@ -12,7 +12,7 @@ extension View {
                                        withCornerRadius corner: CGFloat = 10,
                                        withForegroundColor foreground: Color = Color.white) -> some View {
         
-        self.background(Color(.init(white: 4, alpha: 0.15)))
+        self.background(Color(Asset.Color.pirimary.color))
             .cornerRadius(corner)
             .foregroundColor(foreground)
             .padding(.top, 40)
@@ -23,7 +23,7 @@ extension View {
                                          withCornerRadius corner: CGFloat = 10,
                                          withForegroundColor foreground: Color = Color.white) -> some View {
         
-        self.background(Color(.init(white: 4, alpha: 0.15)))
+        self.background(Color(Asset.Color.pirimary.color))
             .cornerRadius(corner)
             .foregroundColor(foreground)
             .padding(.horizontal, horizontal)
